@@ -13,7 +13,8 @@
   </body>
 
   <script>
-    Parse.Cloud.run('Pair', {userId: 'ewr903204x', eventId:"2948209349"}, {
+  Parse.initialize("5o9QYCh6pmKMHrVSt5TWFJFCmBco82lZq6Jx1hN9", "V7nmWKNn4SMPqewg9zq7Z36EvxzS7g76KCo7lhMn");
+    Parse.Cloud.run('pair', {userId: 'ewr903204x', eventId:"2948209349"}, {
       success: function(results) {
         console.log(results);
         alert("success!");
@@ -22,6 +23,6 @@
         console.log(error);
         alert("error!");
       }
-    }));
+    });
   </script>
 </html>

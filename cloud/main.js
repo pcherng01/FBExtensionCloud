@@ -53,7 +53,7 @@ function saveUser(userId, likes){}
 function setUser(eventId, userId){}
 
 // Other
-Parse.cloud.define('Pair', function(request, response) {
+Parse.Cloud.define('Pair', function(request, response) {
 	var likeQuery = new Parse.Query(LikeData);
 	var eventQuery = new Parse.Query(EventData);
 	
